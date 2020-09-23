@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enter PIN</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <link href='/assets/css/style.css' rel='stylesheet'>
+    <link href='/assets/css/login.css' rel='stylesheet'>
+    <meta name="Description" content="Zwallet">
+</head>
+
+<body class="main-bg h-100">
+    <div class="container-fluid h-100 ">
+        <div class="row h-100 ">
+            <div class="bg-wave d-none d-sm-block col-md-12  col-lg-7 text-white  ">
+                <div class="pl-5 pt-3 h3 ">Zwallet</div>
+                <div class="d-flex justify-content-center">
+                    <img src="/assets/image/phone.svg" class="image-responsive " alt="phone-image" />
+                </div>
+                <div class=" text-left px-5 mx-5 pb-3">
+                    <h5>App that Covering Banking Needs.</h4>
+                </div>
+                <div class=" text-left px-5 mx-5">
+                    Zwallet is an application that focussing in banking needs for all
+                    users in the world. Always updated and always following world
+                    trends. 5000+ users registered in Zwallet everyday with worldwide
+                    users coverage.
+                </div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 p-5  w-100">
+                <div class="pr-5">
+                    <div class="text-left h4">
+                        Secure Your Account, Your Wallet,
+                        and Your Data With 6 Digits PIN
+                        That You Created Yourself.
+                    </div>
+                    <p class="text-left nunito-grey">
+                        Create 6 digits pin to secure all your money and your data in Zwallet app. Keep it secret and
+                        don’t tell anyone about your Zwallet account password and the PIN.
+                    </p>
+                    <form action="enter-pin-success.html">
+
+                        <div class="form-row pt-4 my-5">
+                            <div class="col-0 col-md-1 col-md-2 mx-1">
+
+                            </div>
+                            <div class="col-3 col-md-1 px-0 mx-1">
+                                <label for="codeBox1" class="nunito-transparent">.</label>
+                                <input id="codeBox1" type="number" maxlength="1" onkeyup="onKeyUpEvent(1, event)"
+                                    onfocus="onFocusEvent(1)" class="form-control px-2 text-center" placeholder="_">
+                            </div>
+                            <div class="col-3 col-md-1 px-0 mx-1">
+                                <label for="codeBox2" class="nunito-transparent">.</label>
+                                <input id="codeBox2" type="number" maxlength="1" onkeyup="onKeyUpEvent(2, event)"
+                                    onfocus="onFocusEvent(2)" class="form-control px-2" placeholder="_">
+                            </div>
+                            <div class="col-3 col-md-1 px-0 mx-1">
+                                <label for="codeBox3" class="nunito-transparent">.</label>
+                                <input id="codeBox3" type="number" maxlength="1" onkeyup="onKeyUpEvent(3, event)"
+                                    onfocus="onFocusEvent(3)" class="form-control px-2" placeholder="_">
+                            </div>
+                            <div class="col-3 col-md-1 px-0 mx-1">
+                                <label for="codeBox4" class="nunito-transparent">.</label>
+                                <input id="codeBox4" type="number" maxlength="1" onkeyup="onKeyUpEvent(4, event)"
+                                    onfocus="onFocusEvent(4)" class="form-control px-2" placeholder="_">
+                            </div>
+                            <div class="col-3 col-md-1 px-0 mx-1">
+                                <label for="codeBox5" class="nunito-transparent">.</label>
+                                <input id="codeBox5" type="number" maxlength="1" onkeyup="onKeyUpEvent(5, event)"
+                                    onfocus="onFocusEvent(5)" class="form-control px-2" placeholder="_">
+                            </div>
+                            <div class="col-3 col-md-1 px-0 mx-1">
+                                <label for="codeBox6" class="nunito-transparent">.</label>
+                                <input id="codeBox6" type="number" maxlength="1" onkeyup="onKeyUpEvent(6, event)"
+                                    onfocus="onFocusEvent(6)" class="form-control px-2" placeholder="_">
+                            </div>
+                        </div>
+                        <button type="submit" name="btLogin" class="btn bt-login w-100 mt-5">Confirm</button>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script src="/assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

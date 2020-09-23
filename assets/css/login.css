@@ -17,6 +17,14 @@ input[type="password"].form-login:focus{
   background: url(../image/login/lock-active.svg) no-repeat 5px 1px;
   padding-left: 45px;
 }
+input[type="text"].username{
+  background: url(../image/login/person.svg) no-repeat 5px 1px;
+  padding-left: 45px;
+}
+input[type="text"].username:focus{
+  background: url(../image/login/person-active.svg) no-repeat 5px 1px;
+  padding-left: 45px;
+}
 
 .show-password {
   position: absolute;

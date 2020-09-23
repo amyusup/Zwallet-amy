@@ -46,24 +46,27 @@
           <form action="home.html">
 
             <div class="input-group mt-5">
+              <label for="username" class="text-white">a</label>
+
+              <input type="text" name="username" id="username" class="form-control form-group form-login flat-form username"
+                placeholder="Enter your username " />
+            </div>
+            <div class="input-group mt-5">
               <label for="email" class="text-white">a</label>
 
               <input type="email" name="email" id="email" class="form-control form-group form-login flat-form"
-                placeholder="Email" />
+                placeholder="Enter your e-mail" />
             </div>
             <div class="input-group mt-5">
               <label for="password" class="text-white">a</label>
 
               <input type="password" name="password" id="password" class="form-control form-group form-login flat-form"
-                placeholder="Password" />
+                placeholder="Create your password" />
               <img src="/assets/image/eye-crossed.svg" onclick="myFunction()" alt="showpassword" class="show-password">
             </div>
-            <small class="d-flex flex-row-reverse p-3 ">
-              <a href="">Forgot password ?</a>
-            </small>
-            <button type="submit" name="btLogin" class="btn bt-login w-100 mt-5">Login</button>
+            <button type="submit" name="btLogin" class="btn bg-primary-zwallet w-100 mt-5">Sign Up</button>
             <div class="text-center mt-3 ">
-              Don't have an account ? Let's &nbsp;<a class="primary-zwallet" href=""> Sign Up</a>
+                Already have an account? Let’s  &nbsp;<a class="primary-zwallet" href="login.html"> Login</a>
             </div>
           </form>
         </div>

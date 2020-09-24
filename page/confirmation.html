@@ -91,7 +91,7 @@
                                     </li>
                                     <li class="nav-item col-12">
 
-                                        <a class="nav-link nunito-grey" href="#">
+                                        <a class="nav-link nunito-grey" href="login.html">
                                             <img src="/assets/image/log-out.svg" class="pr-2 img-1-1rem" alt="logout" />
                                             Logout</a>
                                     </li>
@@ -106,13 +106,13 @@
 
         </div>
 
-        <div class="row">
+        <div class="row py-5">
 
             <div class="col-2  ">
 
             </div>
             <!-- START SIDE NAV -->
-            <div class="col-12 col-md-2 d-none d-sm-block  px-0 mt-1  mr-3 py-5 card">
+            <div class="col-12 col-md-2 d-none d-sm-block  px-0 mt-1  mr-3 py-3 card-zwallet">
                 <ul class="nav flex-column">
                     <li class="nav-item pb-2  py-2">
                         <a class="nav-link  nunito-grey" href="home.html">
@@ -136,14 +136,14 @@
                     </li>
                     <li class="nav-item bottom mb-4 px-2">
 
-                        <a class="nav-link nunito-grey" href="#">
+                        <a class="nav-link nunito-grey" href="login.html">
                             <img src="/assets/image/log-out.svg" class="pr-2 img-1-1rem" alt="logout" />
                             Logout</a>
                     </li>
                 </ul>
             </div>
             <!-- END SIDE NAV -->
-            <div class="col-12 col-md-6 p-4 mt-1  pb-0 pl-5 pt-3 mb-1 card h-100">
+            <div class="col-12 col-md-6 p-4 mt-1  pb-0 pl-5 pt-3 mb-1 card-zwallet h-100">
                 <div class="font-weight-bold ">Transfer To</div>
                 <div class="row w-100  py-2 my-2 sub-card">
                     <div class="col-4 col-md-3 col-lg-2 pr-0 ">
@@ -180,11 +180,12 @@
                     </div>
                 </div>
                 <!-- Button trigger modal -->
-                <button type="button" data-toggle="modal" data-target="#confirmation-pin"
-                    class="btn bg-primary-zwallet w-30 ml-auto mr-3">
-                    <div class="small text-center px-0">Continue</div>
-                </button>
-
+                <div class="d-flex justify-content-end">
+                    <button type="button" data-toggle="modal" data-target="#confirmation-pin"
+                        class="btn bg-primary-zwallet  mr-3 px-4 py-2 mt-3 ">
+                        <div class="small text-center px-0">Continue</div>
+                    </button>
+                </div>
 
             </div>
         </div>
@@ -219,10 +220,10 @@
                             money.</div>
 
                         <div class="form-row pt-4">
-                            <div class="col-1 col-md-2 mx-1">
+                            <div class="col-2 col-md-2 mx-1">
 
                             </div>
-                            <div class="col-1 px-0 mx-1">
+                            <div class="col-1 col-md-1 px-0  mx-1">
                                 <input id="codeBox1" type="number" maxlength="1" onkeyup="onKeyUpEvent(1, event)"
                                     onfocus="onFocusEvent(1)" class="form-control px-2" placeholder="_">
                             </div>
@@ -249,7 +250,7 @@
                         </div>
 
                     </div>
-                    <div class="modal-footer border-0" >
+                    <div class="modal-footer border-0">
                         <button type="submit" class="btn bg-primary-zwallet w-30 ml-auto mr-3">
                             <div class="small text-center px-0">Continue</div>
                         </button>

@@ -92,7 +92,7 @@
                                     </li>
                                     <li class="nav-item col-12">
 
-                                        <a class="nav-link nunito-grey" href="#">
+                                        <a class="nav-link nunito-grey" href="login.html">
                                             <img src="/assets/image/log-out.svg" class="pr-2 img-1-1rem" alt="logout" />
                                             Logout</a>
                                     </li>
@@ -107,13 +107,13 @@
 
         </div>
 
-        <div class="row">
+        <div class="row my-5">
 
             <div class="col-2  ">
 
             </div>
             <!-- START SIDE NAV -->
-            <div class="col-12 col-md-2 d-none d-sm-block  px-0 mt-1  mr-3 py-5 card">
+            <div class="col-12 col-md-2 d-none d-sm-block  px-0 mt-1  mr-3 py-3 card-zwallet">
                 <ul class="nav flex-column">
                     <li class="nav-item pb-2  py-2">
                         <a class="nav-link  nunito-grey" href="home.html">
@@ -137,17 +137,17 @@
                     </li>
                     <li class="nav-item bottom mb-4 px-2">
 
-                        <a class="nav-link nunito-grey" href="#">
+                        <a class="nav-link nunito-grey" href="login.html">
                             <img src="/assets/image/log-out.svg" class="pr-2 img-1-1rem" alt="logout" />
                             Logout</a>
                     </li>
                 </ul>
             </div>
             <!-- END SIDE NAV -->
-            <form action="confirmation.html" class="col-12 col-md-6">
-                <div class=" p-4 mt-1  pb-0 pl-5 pt-3 mb-1 card h-100">
-                    <div class="font-weight-bold ">Transfer To</div>
-                    <div class="row w-100  py-2 my-2 sub-card">
+            <form action="confirmation.html" class="col-12 col-md-6 ">
+                <div class=" p-4 mt-1  pb-0 pl-5 pt-3 mb-1 card-zwallet ">
+                    <div class="font-weight-bold ">Transfer Money</div>
+                    <div class="row w-100  py-2 my-4 sub-card">
                         <div class="col-4 col-md-3 col-lg-2 pr-0 ">
                             <img src="/assets/image/samuel.svg" class="image-card" alt="user" />
                         </div>
@@ -156,12 +156,12 @@
                             <div class="small nunito-grey">+62 813-8492-9994</div>
                         </div>
                     </div>
-                    <div class="p nunito-grey pt-4">
+                    <div class="p nunito-grey ">
                         Type the amount you want to transfer and then
                         <br>
                         press continue to the next steps.
                     </div>
-                    <div class=" text-center pt-4 my-0 px-5 mx-5">
+                    <div class=" text-center pt-4 my-0 ">
                         <label for="idr" class="nunito-transparent">.</label>
                         <input type="text" class="form-control flat-form text-center nunito-grey idr mx-auto" name="idr"
                             id="idr" placeholder="0.00" onchange="formatRupiah(this)">
@@ -169,14 +169,16 @@
                     <div class="font-weight-bold text-center">
                         Rp120.000 Available
                     </div>
-                    <div class=" text-center nunito-grey pt-3 my-2 mx-auto">
+                    <div class=" text-center nunito-grey pt-3 my-2 mx-5 ">
                         <label for="notes" class="nunito-transparent">.</label>
                         <input type="text" name="notes" id="notes" class="form-control flat-form  form-amount-blank"
                             placeholder="Add some notes">
                     </div>
-                    <button type="submit" class="btn bg-primary-zwallet w-30 ml-auto mr-3 mt-1">
-                        <div class="small text-center px-0">Continue</div>
-                    </button>
+                    <div class="d-flex justify-content-end">
+                        <button type="submit" class="btn bg-primary-zwallet mr-3 px-4 py-2 mt-3 ">
+                            <div class="small text-center px-0">Continue</div>
+                        </button>
+                    </div>
             </form>
 
         </div>
@@ -195,10 +197,13 @@
     <!-- END FOOT -->
 
     <script>
-       const formatRupiah = (e) => {
+        const formatRupiah = (e) => {
             const number = parseInt(e.value)
-            if(number) {
-                const currency = new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR'}).format(number)
+            if (number) {
+                const currency = new Intl.NumberFormat('id-ID', {
+                    style: 'currency',
+                    currency: 'IDR'
+                }).format(number)
                 e.value = currency
             } else {
                 e.value = ''

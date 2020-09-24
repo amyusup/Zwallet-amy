@@ -79,6 +79,9 @@ a.zwallet-link:hover {
 .radius-20 {
   border-radius: 20px;
 }
+.radius-12 {
+  border-radius: 12px!important;
+}
 
 input[type="text"].flat-form,
 input[type="email"].flat-form,
@@ -116,7 +119,7 @@ input[type="password"].form-login {
 }
 button.bg-primary-zwallet,
 button.bg-secondary-zwallet {
-  box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
+  box-shadow:  0px 6px 75px rgba(100, 87, 87, 0.05);;
   border-radius: 12px;
 }
 
@@ -132,7 +135,7 @@ button.bg-secondary-zwallet {
   color: white;
 }
 
-.card {
+.card-zwallet {
   background: #ffffff;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
   border-radius: 25px;
@@ -141,9 +144,9 @@ button.bg-secondary-zwallet {
 }
 
 .active-side-card {
-  border-left: 4px solid;
-  padding-left: 0;
-  margin-left: 0;
+  border-left: 5px solid;
+  /* padding-left: 0;
+  margin-left: 0; */
   color: rgba(99, 121, 244, 1) !important;
 }
 .active-sub-side-card {
@@ -166,10 +169,17 @@ button.bg-secondary-zwallet {
   background-color: #ffffff;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
   border-radius: 25px;
-  width: 60vh;
+  width: 70vw;
   margin-left: auto;
 }
-
+@media (max-width: 767.98px) { 
+  .zwallet-modal {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 25px;
+    width: 100vw;
+  }
+ }
 /*hide arrow input number */
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
